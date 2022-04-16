@@ -9,7 +9,7 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <nav class="navbar">
+            <nav class="navbar custom-navbar navbar-expand-lg">
                 <div class="container">
                     <div class="navbar-header">
                         <a href="." class="navbar-brand">
@@ -17,30 +17,72 @@
                         </a>
                     </div>
                     <form class="form-inline">
-                        <input type="search" class="form-control" placeholder="ابحث ..">
-                        <div class="dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"  aria-expanded="false">
+                        <input type="search" class="form-control custom-form-control" placeholder="ابحث ..">
+                        <div class="dropdown categories">
+                            <a href="#" class="nav-link dropdown-toggle custom-btn" id="navbarDropdown" role="button" data-toggle="dropdown"  aria-expanded="false">
                                 اختر فئة
                             </a>
-                            <ul class="dropdown-menu">
-                                <label>
-                                    <input type="checkbox" name="search-category" value="men">
-                                    رجالي
-                                </label>
-                                <label>
-                                    <input type="checkbox" name="search-category" value="women">
-                                    نسائي
-                                </label>
-                                <label>
-                                    <input type="checkbox" name="search-category" value="kids">
-                                    أطفال
-                                </label>
+                            <ul class="dropdown-menu custom-dropdown-menu dropdown-menu-right">
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="men">
+                                            رجالي
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="women">
+                                            نسائي
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="kids">
+                                            أطفال
+                                        </label>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
-                        <button type="submit" class="btn">
+                        <button type="submit" class="btn search-btn">
                             ابحث
                         </button>
                     </form>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">الصفحة الرئيسية</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">أقسام المتجر</a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
+                                <li>
+                                    <a href="#" class="dropdown-item">رجالي</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">نسائي</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">أطفال</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="search.html" class="nav-link">البحث المتقدم</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">تواصل معنا</a>
+                        </li>
+                        <li>
+                            <a href="checkout.html" id="btn-shoppingcart" class="btn custom-btn btn-icon"  data-toggle="tooltip" data-placement="bottom" title="عربة الشراء">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </div>
