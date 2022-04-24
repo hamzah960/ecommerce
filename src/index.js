@@ -13,4 +13,7 @@ $(function () {
     $('.add-to-cart-btn').on('click', function() {
         alert('أضيف المنتج الى عربة الشراء');
     });
+
+    $('#copyright span').html(new Date().getFullYear());
+
 });
