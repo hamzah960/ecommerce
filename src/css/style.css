@@ -445,7 +445,6 @@ h3.custom-heading{
     color: #000;
     background-color: #f8ad47;
     border-color: #f8ad47;
-
 }
 .custom-btn-primary2:hover,
 .custom-btn-primary2:active,
@@ -484,6 +483,162 @@ h3.custom-heading{
 /* نهاية تذييل الصفحة */
 
 
+/***********************************************************************
+****************
+product page
+****************
+************************************************************************/
+
+/* عناصر التنقل الفرعية */
+.custom-breadcrumb {
+    background-color: transparent;
+    padding: 25px 0;
+}
+
+.custom-breadcrumb a {
+    color: #555555;
+    text-decoration: none;
+}
+
+.custom-breadcrumb a:hover{
+    color: #f8ad47;
+}
+.custom-breadcrumb>li+li::before {
+    content: ">";
+    color: #555555;
+    padding: 0 5px;
+}
+.custom-breadcrumb .active{
+    color: #bfbfbf;
+}
+/* نهاية عناصر التنقل الفرعية */
+
+/* صورة المنتج */
+#carousel-product-images .carousel-indicators{
+    position: relative;
+    top: -35px;
+    right: 0;
+}
+#carousel-product-images .carousel-item img{
+    border: 1px solid #ebebeb;
+    width: 100%;
+}
+
+#carousel-product-images .carousel-indicators img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 3px;
+}
+#carousel-product-images .carousel-indicators img.active {
+    outline: 2px solid #f8ad47;
+} 
+/* نهاية صورة المنتج */
+
+/* تفاصيل المنتج */
+.block-100 {
+    width: 100%;
+    display: block;
+}
+.product-category {
+    color: #a9a9a9;
+}
+#form-product-selection h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0 10px;
+}
+.price.large{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.borders-between>div+div{
+    border-top: 1px solid #ebebeb;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.product-option {
+    display: inline-block;
+    height: 23px;
+    width: 23px;
+    border: 1px solid #ebebeb;
+    text-align: center;
+    color: #c2c2c2;
+    margin: 3px 3px 9px 3px;
+}
+.product-option input {
+    display: none;
+}
+.product-option label {
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+}
+.product-option.active {
+    color: #f8ad47;
+    border-color: #f8ad47;
+}
+.color-option.active{
+    border-color: #fff;
+    outline: 1px solid #000;
+}
+.product-quantity select {
+    width: 56px;
+    height: 34px !important;
+    padding: 6px 12px;
+    margin-right: 3px;
+}
+.product-quantity .label {
+    padding-top: 10px;
+}
+.product-quantity {
+    padding-bottom: 20px;
+}
+.custom-btn-with-icon {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 5px 10px 5px 10px;
+}
+/* نهاية تفاصيل المنتج */
+
+/* الوصف التفصيلي للمنتج */
+.heading-with-border-bottom {
+    border-bottom: 2px solid #ebebeb;
+    padding-bottom: 15px;
+}
+.heading-inline {
+    display: inline-block;
+    min-width: 250px;
+}
+.more-description p,
+.more-description ul {
+    margin-bottom: 10px;
+}
+/* نهاية الوصف التفصيلي للمنتج */
+
+/* التعليقات على المنتج */
+.comments .media {
+    margin: 15px;
+}
+.comments .media img {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    border: 1px solid #dfdfdf;
+}
+.comments .media .media-heading{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+/* نهاية التعليقات على المنتج */
+
+/* اقترحنا لك */
+.suggestions .custom-thumbnail {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+/* نهاية اقترحنا لك */
 
 /**********************************************************************
 ********************
@@ -569,6 +724,14 @@ MEDIA QUERY
         font-size: 150%;
         margin-top: 10px;
     }
+    /* product-page */
+    .product-option {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        line-height: 40px;
+        font-size: 20px;
+    }
 }
 @media (max-width: 767px){
     #carousel-featured{
@@ -614,4 +777,12 @@ MEDIA QUERY
     #footer #brand-logos .img-container img {
         margin: 5px 15px;
     }
+
+
+    /* product-page */
+    #form-product-selection, .comments {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
 }
