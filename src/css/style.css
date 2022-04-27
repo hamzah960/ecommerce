@@ -640,6 +640,83 @@ product page
 }
 /* نهاية اقترحنا لك */
 
+
+/***********************************************************************
+****************
+checkout page
+****************
+************************************************************************/
+h1.custom-heading {
+    font-size: 36px;
+    margin: 25px 0;
+}
+.custom-table .custom-media img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #fbebeb;
+    margin-left: 10px;
+}
+.custom-table .custom-media h4 {
+    font-size: 18px;
+    margin: 12px 0;
+}
+.custom-table .quantity {
+    width: 56px;
+    height: 34px !important;
+    padding: 0 8px;
+    margin: auto;
+}
+.custom-table th, .custom-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+    font-size: 120%;
+}
+.custom-table th:first-child, .custom-table td:first-child {
+    width: 60%;
+}
+.custom-table th {
+    color: #c2c2c2;
+    font-weight: normal;
+}
+#form-checkout {
+    width: 100%;
+}
+.custom-btn-danger {
+    color: #ff5a5f;
+    border-color: #ff5a5f;
+    background-color: transparent;
+    border-radius: 3px;
+}
+.custom-btn-danger:hover,
+.custom-btn-danger:active,
+.custom-btn-danger:focus,
+.custom-btn-danger:active:focus,
+.custom-btn-danger:active:hover {
+    color: #c2101e;
+    border-color: #c2101e;
+    background-color: transparent;
+}
+.custom-table .custom-media {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.custom-table th:first-child {
+    padding-right: 20px;
+}
+.custom-table tfoot td {
+    border-bottom: none;
+    font-size: 150%;
+}
+.custom-table .total-price * {
+    color: #000;
+}
+.custom-table .total-price .custom-text-muted .custom-text-muted {
+    color: #a9a9a9;
+}
+
+
 /**********************************************************************
 ********************
 MEDIA QUERY
@@ -758,6 +835,11 @@ MEDIA QUERY
     }
     #newsletter form .input-group{
         width: 100%;
+    }
+
+    /*CHECKOUT PAGE*/
+    .hide-on-small{
+        display: none;
     }
 }
 @media (max-width: 575px){
