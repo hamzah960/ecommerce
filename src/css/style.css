@@ -32,24 +32,9 @@ body{
     margin-left: 30px;
     margin-top: 4px;
 }
-.custom-form-control,
-.custom-btn{
-    border: 1px solid #ebebeb;
-    box-shadow: none;
-    border-radius: 2px;
-    font-size: 14px;
-    transition: all .3s ease;
-    padding: 6px 16px 7px 16px;
-    color: #868686;
-}
 .custom-navbar .container .custom-form-control:focus{
     border-color: #c2101e;
     box-shadow: 0 0 2px 0 #c2101e;
-}
-.custom-btn:hover {
-    background-color: #d4d4d4;
-    border: 1px solid #8c8c8c;
-    color: #b86d07;
 }
 .categories .nav-link{
     border-right: 0;
@@ -287,7 +272,7 @@ h3.custom-heading{
     position: absolute;
     top: 8px;
     left: 8px;
-    width: calc(100%-16px);
+    width: calc(100% - 16px);
     height: 250px;
     background-color: rgba(83, 204, 215, .5);
     opacity: 0;
@@ -346,20 +331,6 @@ h3.custom-heading{
 .custom-pane .product-image{
     width: 100%;
     margin-bottom: 8px;
-}
-.custom-btn-primary{
-    color: #f8ad47;
-    border-color: #f8ad47;
-    background-color: transparent;
-}
-.custom-btn-primary:hover,
-.custom-btn-primary:active,
-.custom-btn-primary:focus,
-.custom-btn-primary:active:focus,
-.custom-btn-primary:active:hover{
-    color: #b86d07;
-    border-color: #b86d07;
-    background-color: transparent;
 }
 .custom-pane h4 ,
 .custom-pane .price{
@@ -440,20 +411,6 @@ h3.custom-heading{
     font-size: 12px;
     font-weight: bold;
     color: #555555;
-}
-.custom-btn-primary2{
-    color: #000;
-    background-color: #f8ad47;
-    border-color: #f8ad47;
-}
-.custom-btn-primary2:hover,
-.custom-btn-primary2:active,
-.custom-btn-primary2:focus,
-.custom-btn-primary2:active:focus,
-.custom-btn-primary2:active:hover{
-    background-color: #b86d07;
-    border-color: #b86d07;
-    color: #000;
 }
 #newsletter form input{
     background-color: #313131;
@@ -650,70 +607,8 @@ h1.custom-heading {
     font-size: 36px;
     margin: 25px 0;
 }
-.custom-table .custom-media img {
-    width: 80px;
-    height: 80px;
-    border: 1px solid #fbebeb;
-    margin-left: 10px;
-}
-.custom-table .custom-media h4 {
-    font-size: 18px;
-    margin: 12px 0;
-}
-.custom-table .quantity {
-    width: 56px;
-    height: 34px !important;
-    padding: 0 8px;
-    margin: auto;
-}
-.custom-table th, .custom-table td {
-    padding: 15px;
-    border-bottom: 1px solid #ebebeb;
-    border-top: 1px solid #ebebeb;
-    font-size: 120%;
-}
-.custom-table th:first-child, .custom-table td:first-child {
-    width: 60%;
-}
-.custom-table th {
-    color: #c2c2c2;
-    font-weight: normal;
-}
 #form-checkout {
     width: 100%;
-}
-.custom-btn-danger {
-    color: #ff5a5f;
-    border-color: #ff5a5f;
-    background-color: transparent;
-    border-radius: 3px;
-}
-.custom-btn-danger:hover,
-.custom-btn-danger:active,
-.custom-btn-danger:focus,
-.custom-btn-danger:active:focus,
-.custom-btn-danger:active:hover {
-    color: #c2101e;
-    border-color: #c2101e;
-    background-color: transparent;
-}
-.custom-table .custom-media {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-}
-.custom-table th:first-child {
-    padding-right: 20px;
-}
-.custom-table tfoot td {
-    border-bottom: none;
-    font-size: 150%;
-}
-.custom-table .total-price * {
-    color: #000;
-}
-.custom-table .total-price .custom-text-muted .custom-text-muted {
-    color: #a9a9a9;
 }
 
 /**********************************************************************
@@ -764,27 +659,6 @@ SEARCH PAGE
     font-weight: bold;
 }
 
-/* تنسيق مكون البحث حسب السعر */
-.ui-slider {
-    margin: 25px 0 15px;
-    height: 2px !important;
-}
-
-/*المقبضان*/
-.ui-slider .ui-slider-handle {
-    background-color: #f8ad47 !important;
-    border: none !important;
-    border-radius: 50%;
-    height: 12px !important;
-    width: 12px !important;
-    top: -6px !important;
-}
-
-/* المجال */
-.ui-slider .ui-slider-range {
-    border: 1px solid #f8ad47 !important;
-    top: -1px !important;
-}
 
 .custom-pagination {
     margin: 25px 0;
@@ -943,13 +817,6 @@ MEDIA QUERY
         margin: 10px;
         line-height: 40px;
         font-size: 20px;
-    }
-
-    /*search page*/
-    .ui-slider .ui-slider-handle {
-        height: 20px !important;
-        width: 20px !important;
-        top: -10px !important;
     }
 
     /* contact page */
